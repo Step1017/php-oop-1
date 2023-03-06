@@ -142,6 +142,7 @@ new Movie("Black Widow", "Cate Shortland", "2021",["action"])
                         <th scope="col">Title</th>
                         <th scope="col">Director</th>
                         <th scope="col">Year</th>
+                        <th scope="col">Genre</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -150,6 +151,7 @@ new Movie("Black Widow", "Cate Shortland", "2021",["action"])
                             <td><?php echo $movie->getMovieTitle() ?></td>
                             <td><?php echo $movie->getMovieDirector() ?></td>
                             <td><?php echo $movie->getMovieYear() ?></td>
+                            <td><?php echo implode(", ", $movie->getMovieGenre()) ?></td>
                         </tr>
                     <?php endforeach; ?>
                 </tbody>
