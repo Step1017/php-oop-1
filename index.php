@@ -8,7 +8,7 @@ class Movie {
     private $genre;
 
     // Costruttore della classe
-    public function __construct($title, $director, $year, $genre) {
+    public function __construct(string $title, string $director, int $year, array $genre) {
         $this->title = $title;
         $this->director = $director;
         $this->year = $year;
@@ -70,25 +70,25 @@ class Movie {
 }
 
 // Istanziazione degli oggetti Movie
-$movie1 = new Movie("Iron Man", "Jon Favreau", "2008","action");
-$movie2 = new Movie("Thor", "Kenneth Branagh", "2011","action");
-$movie3 = new Movie("Captain America: The First Avenger", "Joe Johnston", "2011","action");
-$movie4 = new Movie("Marvel's The Avengers", "Joss Whedon", "2012","action");
-$movie5 = new Movie("Guardiani della Galassia", "James Gunn", "2014","action");
-$movie6 = new Movie("Avengers: Age of Ultron", "Joss Whedon", "2015","action");
-$movie7 = new Movie("Ant-Man", "Peyton Reed", "2015","action");
-$movie8 = new Movie("Doctor Strange", "Scott Derrickson", "2016","action");
-$movie9 = new Movie("Spider-Man: Homecoming", "Jon Watts", "2017","action");
-$movie10 = new Movie("Black Panther", "Ryan Coogler", "2018","action");
-$movie11 = new Movie("Avengers: Infinity War", "Anthony Russo & Joe Russo", "2018","action");
-$movie12 = new Movie("Captain Marvel", "Anna Boden; Ryan Fleck", "2019","action");
-$movie13 = new Movie("Avengers: Endgame", "Anthony Russo & Joe Russo", "2019","action");
-$movie14 = new Movie("Black Widow", "Cate Shortland", "2021","action");
-$movie15 = new Movie("Black Widow", "Cate Shortland", "2021","action");
-$movie16 = new Movie("Shang-Chi e la Leggenda dei Dieci Anelli", "Destin Daniel Cretton", "2021","action");
-$movie17 = new Movie("Black Widow", "Cate Shortland", "2021","action");
-$movie18 = new Movie("Eternals", "Chloé Zhao", "2021","action");
-$movie19 = new Movie("Black Widow", "Cate Shortland", "2021","action");
+$movie1 = new Movie("Iron Man", "Jon Favreau", "2008",["action","fantasy","adventure"]);
+$movie2 = new Movie("Thor", "Kenneth Branagh", "2011",["action","fantasy","adventure"]);
+$movie3 = new Movie("Captain America: The First Avenger", "Joe Johnston", "2011",["action","fantasy","adventure"]);
+$movie4 = new Movie("Marvel's The Avengers", "Joss Whedon", "2012",["action","fantasy","adventure"]);
+$movie5 = new Movie("Guardiani della Galassia", "James Gunn", "2014",["action","fantasy","adventure","comedy"]);
+$movie6 = new Movie("Avengers: Age of Ultron", "Joss Whedon", "2015",["action","drama"]);
+$movie7 = new Movie("Ant-Man", "Peyton Reed", "2015",["action","fantasy","comedy"]);
+$movie8 = new Movie("Doctor Strange", "Scott Derrickson", "2016",["action","fantasy","drama"]);
+$movie9 = new Movie("Spider-Man: Homecoming", "Jon Watts", "2017",["action"]);
+$movie10 = new Movie("Black Panther", "Ryan Coogler", "2018",["action"]);
+$movie11 = new Movie("Avengers: Infinity War", "Anthony Russo & Joe Russo", "2018",["action","drama"]);
+$movie12 = new Movie("Captain Marvel", "Anna Boden; Ryan Fleck", "2019",["action"]);
+$movie13 = new Movie("Avengers: Endgame", "Anthony Russo & Joe Russo", "2019",["action","drama","fantasy"]);
+$movie14 = new Movie("Black Widow", "Cate Shortland", "2021",["action"]);
+$movie15 = new Movie("Black Widow", "Cate Shortland", "2021",["action"]);
+$movie16 = new Movie("Shang-Chi e la Leggenda dei Dieci Anelli", "Destin Daniel Cretton", "2021",["action"]);
+$movie17 = new Movie("Black Widow", "Cate Shortland", "2021",["action"]);
+$movie18 = new Movie("Eternals", "Chloé Zhao", "2021",["action"]);
+$movie19 = new Movie("Black Widow", "Cate Shortland", "2021",["action"]);
 ?>
 
 <?php 
